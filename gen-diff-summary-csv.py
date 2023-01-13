@@ -9,7 +9,7 @@ stdin = open(sys.argv[1], encoding='utf-8').readlines() if len(sys.argv) > 1 els
 
 DELIMITER=','
 ENCODING='utf-8-sig'
-COLUMNS = (os.getenv("COLUMNS") or "module,full path, filename, deploy date").split(",")
+COLUMNS = (os.getenv("COLUMNS") or "module,full path, filename, commit message, deploy date").split(",")
 
 
 sys.stdout.reconfigure(encoding = ENCODING)
